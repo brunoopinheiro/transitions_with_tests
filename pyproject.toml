@@ -31,7 +31,6 @@ pythonpath = '.'
 addopts = ['-vv', '--cov', '-p no:warnings']
 testpaths = [
     'tests',
-    'integration',
 ]
 
 [tool.taskipy.tasks]

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Python Debugger: Module",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "transitions_with_tests",
+            "purpose": [
+                "debug-test",
+            ],
+            "justMyCode": false,
+        }
+    ]
+}
