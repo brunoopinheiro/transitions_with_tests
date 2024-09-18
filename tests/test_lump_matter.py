@@ -1,4 +1,4 @@
-import pytest  # NOQA
+import pytest
 from src.client.matter import StatefulLump
 
 
