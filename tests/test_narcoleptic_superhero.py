@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch
-from client.narcoleptic_superhero import NarcolepticSuperhero
+from src.client.narcoleptic_superhero import NarcolepticSuperhero
 from transitions import MachineError
 
 
@@ -52,7 +52,7 @@ def test_complete_mission_updates_kittens_rescued(batman):
 
 def test_goes_to_sleep_if_cleanup_while_is_exhausted(batman):
     with patch(
-        'client.narcoleptic_superhero.NarcolepticSuperhero.is_exhausted',
+        'src.client.narcoleptic_superhero.NarcolepticSuperhero.is_exhausted',
         return_value=True,
     ):
         batman.distress_call()
@@ -63,7 +63,7 @@ def test_goes_to_sleep_if_cleanup_while_is_exhausted(batman):
 
 def test_hanging_out_after_cleanup_while_not_exhausted(batman):
     with patch(
-        'client.narcoleptic_superhero.NarcolepticSuperhero.is_exhausted',
+        'src.client.narcoleptic_superhero.NarcolepticSuperhero.is_exhausted',
         return_value=False,
     ):
         batman.distress_call()

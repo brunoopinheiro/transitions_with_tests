@@ -28,7 +28,7 @@ quote-style = 'single'
 
 [tool.pytest.ini_options]
 pythonpath = '.'
-addopts = ['-vv', '--cov', '-p no:warnings']
+addopts = ['-v']
 testpaths = [
     'tests',
 ]
